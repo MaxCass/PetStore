@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 
 public class TestPetou {
 	
@@ -19,7 +21,7 @@ public class TestPetou {
 			options.addPreference("browser.tabs.remote.autostart", false);
 			
 			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Formation\\Desktop\\Documents\\geckodriver.exe");
-			driver = new FirefoxDriver();
+			driver = new FirefoxDriver(options);
 		}
 		else if(System.getProperty("navigateur").equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Formation\\Desktop\\Documents\\chromedriver.exe");
