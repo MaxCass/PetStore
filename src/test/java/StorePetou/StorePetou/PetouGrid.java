@@ -19,10 +19,10 @@ public class PetouGrid {
 	//@Test
 	public void Chrome() throws MalformedURLException {
 		String URL = "https://fr.wikipedia.org";
-		String Node = "http://192.168.56.1:4444/wd/hub";
+		String Node = "http://localhost:4444/wd/hub";
 		System.out.println(" Executing on Chrome");
 		cap.setBrowserName("chrome");
-		cap.setVersion("63.0.3239.132");
+		//cap.setVersion("63.0.3239.132");
 		cap.setPlatform(org.openqa.selenium.Platform.WINDOWS);
 		driver = new RemoteWebDriver(new URL(Node), cap);
 		driver.navigate().to(URL);
@@ -36,9 +36,9 @@ public class PetouGrid {
 	public void Firefox() throws MalformedURLException {
 		String URL = "https://fr.wikipedia.org";
 		System.out.println(" Executing on FireFox");
-		String Node = "http://192.168.56.1:4444/wd/hub";			
+		String Node = "http://localhost:4444/wd/hub";			
 		cap.setBrowserName("firefox");
-		cap.setVersion("57.0.4");
+		//cap.setVersion("57.0.4");
 		cap.setPlatform(org.openqa.selenium.Platform.WINDOWS);
 		driver = new RemoteWebDriver(new URL(Node), cap);
 		//WebDriver driver = new FirefoxDriver();
