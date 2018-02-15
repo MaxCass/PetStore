@@ -16,7 +16,7 @@ public class PetouGrid {
 	
 	DesiredCapabilities cap = new DesiredCapabilities();
 	
-	//@Test
+	@Test
 	public void Chrome() throws MalformedURLException {
 		String URL = "https://fr.wikipedia.org";
 		String Node = "http://localhost:4444/wd/hub";
@@ -32,7 +32,7 @@ public class PetouGrid {
 		driver.close();
 	}	
 	
-	//@Test
+	@Test
 	public void Firefox() throws MalformedURLException {
 		String URL = "https://fr.wikipedia.org";
 		System.out.println(" Executing on FireFox");
