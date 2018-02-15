@@ -9,7 +9,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 
-public class PetouGrid {
+public class TestPetouGrid {
 
 	public RemoteWebDriver driver;
 	public String URL, Node;
